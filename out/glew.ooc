@@ -5,7 +5,7 @@ GLbitfield: extern cover from UInt
 GLuint: extern cover from UInt
 GLint: extern cover from Int
 GLsizei: extern cover from Int
-GLboolean: extern cover from UChar
+GLboolean: extern cover from UChar extends Bool
 GLbyte: extern cover from SChar
 GLshort: extern cover from short
 GLubyte: extern cover from UChar extends SSizeT
