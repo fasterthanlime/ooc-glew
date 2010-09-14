@@ -8,7 +8,7 @@ GLsizei: extern cover from Int
 GLboolean: extern cover from UChar
 GLbyte: extern cover from SChar
 GLshort: extern cover from short
-GLubyte: extern cover from UChar
+GLubyte: extern cover from UChar extends SSizeT
 GLushort: extern cover from UShort
 GLulong: extern cover from ULong
 GLfloat: extern cover from Float
@@ -4098,7 +4098,7 @@ glPointParameterfvEXT: extern func (pname:GLenum, params:GLfloat*) -> Void
 glVertexAttrib3fvNV: extern func (index:GLuint, v:GLfloat*) -> Void
 glProgramUniform1fEXT: extern func (program:GLuint, location:GLint, v0:GLfloat) -> Void
 glVertexAttribI3i: extern func (arg0:GLuint, arg1:GLint, arg2:GLint, arg3:GLint) -> Void
-glVertex3fv: extern func (v:GLfloat*) -> Void
+glVertex3fv: extern func (v:Pointer) -> Void
 glIsEnabled: extern func (cap:GLenum) -> GLboolean
 glSecondaryColor3usv: extern func (v:GLushort*) -> Void
 glProgramUniform1ivEXT: extern func (program:GLuint, location:GLint, count:GLsizei, value:GLint*) -> Void
