@@ -1,16 +1,16 @@
 include GL/glew
 
-GLenum: extern cover from UInt
+GLenum: extern cover from UInt extends SSizeT
 GLbitfield: extern cover from UInt
-GLuint: extern cover from UInt
-GLint: extern cover from Int
-GLsizei: extern cover from Int
+GLuint: extern cover from UInt extends SSizeT
+GLint: extern cover from Int extends SSizeT
+GLsizei: extern cover from Int extends SSizeT
 GLboolean: extern cover from UChar extends Bool
-GLbyte: extern cover from SChar
-GLshort: extern cover from short
+GLbyte: extern cover from SChar extends SSizeT
+GLshort: extern cover from short extends SSizeT
 GLubyte: extern cover from UChar extends SSizeT
-GLushort: extern cover from UShort
-GLulong: extern cover from ULong
+GLushort: extern cover from UShort extends SSizeT
+GLulong: extern cover from ULong extends SSizeT
 GLfloat: extern cover from Float
 GLclampf: extern cover from Float
 GLdouble: extern cover from Double
