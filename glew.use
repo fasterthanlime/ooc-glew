@@ -2,5 +2,5 @@ Name: Glew
 Description: The OpenGL Extension Wrangler Library
 Pkgs: gl, glu
 Includes: GL/glew.h
-SourcePath: ./out
+SourcePath: source
 Libs: -lGLEW
