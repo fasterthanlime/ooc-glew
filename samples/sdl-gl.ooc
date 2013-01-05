@@ -4,7 +4,7 @@ import sdl/Core
 use glew
 import glew
 
-main: func {
+main: func (argc: Int, argv: Char**) {
 
     (width, height) := (640, 480)
     SDL init(SDL_INIT_EVERYTHING)
